@@ -1,23 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import { Invitation } from './Invitation/invitation';
 
 function App() {
+  const subject=<p style={{color: "red"}}>Birthday Party Invitation</p>
+  const name=<p style={{color: "red"}}>jaGdish</p>
+  const mail=<p style={{color: "red"}}>jaGdish@gmail.com</p>
+  const friends=<p style={{color: "red"}}>Ritu Saurav Kartik</p>
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Invitation name={name} subject={subject} mail={mail} friends={friends}/>
+
     </div>
   );
 }
